@@ -22,7 +22,7 @@ from keras.layers import Input, Dense, Lambda, Layer, Add, BatchNormalization, D
     MaxPooling2D, Activation, LeakyReLU, concatenate
 from keras.models import Model, Sequential
 from keras.losses import mse, binary_crossentropy
-from keras.optimizers import Adam
+from keras.optimizers_v1 import Adam
 from sklearn.ensemble import RandomForestClassifier
 from keras.models import load_model
 from keras.utils.generic_utils import get_custom_objects
