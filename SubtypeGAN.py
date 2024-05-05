@@ -414,8 +414,11 @@ def main(argv=sys.argv):
             args.cluster_num = cancer_dict[cancer_type]
         fea_tmp_file = './fea/' + cancer_type + '.fea'
         tmp_dir = './fea/' + cancer_type + '/'
+        model_dir ='./model'
         if not os.path.isdir(tmp_dir):
             os.mkdir(tmp_dir)
+        if not os.path.isdir(model_dir):
+            os.mkdir(model_dir)
         ldata = []
         l = []
         nb_line = 0
